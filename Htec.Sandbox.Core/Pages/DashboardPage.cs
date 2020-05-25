@@ -3,11 +3,6 @@ using OpenQA.Selenium.Support.PageObjects;
 using Htec.Common.CommonPages;
 using Htec.Common.Extenders;
 using Htec.Common.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Htec.Sandbox.Core.Pages
 {

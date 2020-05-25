@@ -91,6 +91,7 @@ namespace Htec.Sandbox.Tests
         //    DashboardPage dashboardPage = Utility.Driver.GetCurrentPage<DashboardPage>();
         //    Utility.Wait(2);
         //    UseCasesListPage useCasesListPage = dashboardPage.ClickOnUseCases();
+        //    Utility.Wait(2);
         //    do
         //    {
         //        int counter = Utility.Driver.FindElements(By.XPath("//a[@class='list-group-item list-group-item-action']")).Count();

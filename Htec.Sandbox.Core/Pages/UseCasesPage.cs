@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Support;
 using Htec.Common.CommonPages;
 using Htec.Common.Extenders;
 using Htec.Common.Helpers;
