@@ -1,0 +1,91 @@
+[
+  {
+    "Title": "Login process - happy path",
+    "Description": "Testing happy path of login process.",
+    "ExpectedResult": "User should be successfully logged in to QA Sandbox. User should land to dashboard page.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@gmail.com' in 'Email' field.",
+      "Enter valid password in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Enter invalid password in 'Password' field.",
+    "Description": "Testing login process when user enters invalid password in 'Password' field.",
+    "ExpectedResult": "User should be on login page. 'Password incorrect' validation message should popup bellow 'Password' field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@gmail.com' in 'Email' field.",
+      "Enter 'test' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Enter 'stefanrasevic@gmail.net' in 'Email' field.",
+    "Description": "Testing login process when user enters 'stefanrasevic@gmail.net' in Email field.",
+    "ExpectedResult": "User should be on login page. 'User not found' validation message should popup bellow Email field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@gmail.net' in 'Email' field.",
+      "Enter 'Re@9er1108' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Enter 'stefanrasevic@gmail' in 'Email' field.",
+    "Description": "Testing login process when user enters 'stefanrasevic@gmail' in Email field.",
+    "ExpectedResult": "User should be on login page. 'Email is invalid' validation message should popup bellow Email field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@gmail' in 'Email' field.",
+      "Enter 'Re@9er1108' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Enter 'stefanrasevic@' in 'Email' field.",
+    "Description": "Testing login process when user enters 'stefanrasevic@' in Email field.",
+    "ExpectedResult": "User should be on login page. 'Please enter a part following '@', stefanrasevic@ is incomplete.' validation message should popup bellow Email field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@' in 'Email' field.",
+      "Enter 'Re@9er1108' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Enter 'stefanrasevic' in 'Email' field.",
+    "Description": "Testing login process when user enters 'stefanrasevic' in Email field.",
+    "ExpectedResult": "User should be on login page. 'Please include an '@' in the email address. stefanrasevic is missing an '@'.' validation message should popup bellow Email field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic' in 'Email' field.",
+      "Enter 'Re@9er1108' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Leave password field blank",
+    "Description": "Testing login process when password field is left blank.",
+    "ExpectedResult": "User should be on login page. 'Password is required' validation message should popup bellow Password field.",
+    "isAutomated": true,
+    "Steps": [
+      "Enter 'stefanrasevic@gmail.com' in 'Email' field.",
+      "Leave 'Password' field blank.",
+      "Click on 'Submit' button."
+    ]
+  },
+  {
+    "Title": "Email field is blank",
+    "Description": "Testing login process when email field is left blank.",
+    "ExpectedResult": "User should be on login page. 'Email field is required' validation message should popup bellow Email field.",
+    "isAutomated": true,
+    "Steps": [
+
+      "Leave 'Email' field blank.",
+      "Enter 'Re@9er1108' in 'Password' field.",
+      "Click on 'Submit' button."
+    ]
+  }
+]
